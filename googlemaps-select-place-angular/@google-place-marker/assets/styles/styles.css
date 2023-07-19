@@ -1,0 +1,226 @@
+@font-face {
+  font-family: 'MarkPro.Bold';
+  src: url('../fonts/MarkPro-Bold.woff2') format('woff2'),
+       url('../fonts/MarkPro-Bold.woff') format('woff');
+}
+@font-face {
+  font-family: 'MarkPro.BoldItalic';
+  src: url('../fonts/MarkPro-BoldItalic.woff2') format('woff2'),
+       url('../fonts/MarkPro-BoldItalic.woff') format('woff');
+}
+h1,h2,h3,h4,h5,h6{
+ 
+  font-family: 'MarkPro.Bold';
+}
+p{
+  font-family: 'MarkPro.BoldItalic';
+  padding: 0;
+  margin: 0;
+}
+.container-pac{
+  width: 100%;
+  height: 100%;
+  display: grid;
+  position: relative;
+  grid-template-rows: 35px 20px 1fr;
+}
+.container-details{
+  width: 100%;
+  height: 100%;
+  display: grid;
+  grid-template-rows: 35px 1fr 150px;
+}
+.maps-input-form{
+  height: 100% !important;
+  position: relative;
+  width: 100%;
+  grid-row: 1fr !important;
+}
+.pac-container {
+  box-sizing: content-box;
+  position: absolute !important;
+  top: -5px !important;
+  left: 0 !important;
+  display: block !important;
+  width: 100% !important;
+  overflow-y: auto !important;
+  
+  margin-top: 8px;
+  font-family: MarkPro, system-ui, sans-serif;
+  border-top: none;
+  box-shadow: none;
+  grid-row: 1fr !important;
+  
+}
+/* .pac-container::after {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 120px;
+  height: 14px;
+} */
+.input-place{
+  width: 100%;
+}
+.pac-item {
+  display: grid;
+  grid-template-areas:
+    "a"
+    "a";
+  grid-template-rows: 1fr 1fr;
+  grid-template-columns: 29px 1fr;
+  align-items: center;
+  transition: all ease 0.3s;
+  padding: 8px 0;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 13px;
+  color: #666;
+  border: none;
+  border-bottom: 1px solid #eaeaea;
+}
+.pac-item:active,
+.pac-item:checked,
+.pac-item:hover {
+  background-color: #eaeaea !important;
+}
+.pac-item-query {
+  font-size: 15px;
+  font-weight: 700;
+  line-height: 19px;
+  color: #666;
+}
+.pac-item > span {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.pac-icon {
+  grid-area: a;
+}
+
+.bonus-button {
+  display: inline-block;
+  min-width: 180px;
+  cursor: pointer;
+  padding: 10px 25px;
+  font-size: 15px;
+  font-weight: 700;
+  line-height: 16px;
+  text-align: center;
+  text-decoration: none;
+  border: 0;
+  border-radius: 5px;
+}
+.bonus-button-yellow {
+  color: #0049ac;
+  background-color: #ffd100;
+  transition: all ease 0.3s;
+}
+.bonus-button-yellow:active,
+.bonus-button-yellow:checked,
+.bonus-button-yellow:hover {
+  color: #5b98ce;
+  background-color: #ffefae;
+}
+
+.bonus-map-tooltip {
+  margin-top: 9px;
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 15px;
+  color: #0049ac;
+  text-align: center;
+}
+.bonus-map-tooltip > a {
+  color: #0049ac;
+  transition: all ease 0.3s;
+}
+.bonus-map-tooltip > a:active,
+.bonus-map-tooltip > a:checked,
+.bonus-map-tooltip > a:hover {
+  color: #5b98ce;
+}
+
+.display-off {
+  display: none;
+}
+input {
+  border: none; /* Elimina el borde */
+  outline: none; /* Elimina el contorno al enfocar el input */
+  background-color: transparent; /* Elimina el color de fondo */
+}
+.bonus-container-input-place {
+  display: flex;
+  width: 100%;
+  padding: 10px;
+  border-radius: 100px;
+  background-color: gainsboro;
+  margin-left: 5px;
+}
+
+.bonus-container-header {
+  display: flex;
+  height: 35px;
+}
+#map {
+  height: 100%;
+  width: 100%;
+  opacity: 0; /* Inicialmente, establece la opacidad en 0 */
+  transition: opacity 1s ease-in-out; /* Agrega una transición suave */
+  margin-top: 10px;
+}
+.container-button-text{
+  height: 150px;
+  
+}
+.bonus-map-title {
+  margin: 0;
+  color: #666;
+  text-align: left;
+}
+.bonus-text-title {
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 20px;
+  color: #666;
+}
+
+.bonus-text-sub-title {
+  font-size: 15px;
+  font-weight: 500;
+  line-height: 16px;
+  color: #666;
+}
+.bonus-text-sub-title-bold {
+  font-weight: 700;
+}
+.bonus-map-address-title {
+  font-size: 15px;
+  font-weight: 700;
+  line-height: 19px;
+}
+.bonus-map-address-sub-title {
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 13px;
+}
+
+.bonus-maps-find{
+  padding: 0px 6px;
+  background-color: gainsboro;
+  border-radius: 100px;
+  display: flex;
+  align-items: center;
+  align-content: center;
+  cursor: pointer;
+}
+
+.find-address{
+  cursor: pointer;
+}
+
+.bonus-input-icon-back{
+  width: 20px;
+}
