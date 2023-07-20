@@ -95,7 +95,6 @@ export default class GoogleMapsComponent {
 	// html del componente
 	render() {
 		const componentContainer = document.getElementById(this.containerId);
-		console.log(componentContainer);
 		const componentHTML = `
             <div class="container-pac"  id="container-pac">
               <div class="bonus-container-header">
