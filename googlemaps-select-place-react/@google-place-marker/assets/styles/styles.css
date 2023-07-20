@@ -8,8 +8,8 @@
   src: url('../fonts/MarkPro-BoldItalic.woff2') format('woff2'),
        url('../fonts/MarkPro-BoldItalic.woff') format('woff');
 }
+
 h1,h2,h3,h4,h5,h6{
- 
   font-family: 'MarkPro.Bold';
 }
 p{
@@ -17,6 +17,7 @@ p{
   padding: 0;
   margin: 0;
 }
+
 .container-pac{
   width: 100%;
   height: 100%;
@@ -52,16 +53,11 @@ p{
   grid-row: 1fr !important;
   
 }
-/* .pac-container::after {
-  position: absolute;
-  top: 0;
-  right: 0;
-  width: 120px;
-  height: 14px;
-} */
+
 .input-place{
   width: 100%;
 }
+
 .pac-item {
   display: grid;
   grid-template-areas:
@@ -146,6 +142,7 @@ p{
 .display-off {
   display: none;
 }
+
 input {
   border: none; /* Elimina el borde */
   outline: none; /* Elimina el contorno al enfocar el input */
@@ -171,6 +168,7 @@ input {
   transition: opacity 1s ease-in-out; /* Agrega una transición suave */
   margin-top: 10px;
 }
+
 .container-button-text{
   height: 150px;
   
@@ -221,6 +219,6 @@ input {
   cursor: pointer;
 }
 
-.bonus-input-icon-back{
+.bonus-icon-back{
   width: 20px;
 }

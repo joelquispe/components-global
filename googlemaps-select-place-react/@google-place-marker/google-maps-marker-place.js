@@ -100,7 +100,7 @@ export default class GoogleMapsComponent {
             <div class="container-pac"  id="container-pac">
               <div class="bonus-container-header">
 
-                <img class="bonus-input-icon-back" style="cursor: pointer;" id="container-back" src="back-map.svg" alt="" />
+                <img class="bonus-icon-back" style="cursor: pointer;" id="container-back" src="back-map.svg" alt="" />
                 <div class="bonus-container-input-place">
                   <input id="pac-input" class="input-place" type="text" placeholder="Buscar lugares" />
                   <img id="image-clear" style="cursor: pointer;"  src="clear-map.svg" alt="" />
@@ -120,7 +120,7 @@ export default class GoogleMapsComponent {
                 <img
                 style="cursor: pointer;margin-right: 10px;"
                 id="maps-register-back"
-                class="bonus-input-icon-back"
+                class="bonus-icon-back"
                 src="back-map.svg"
               />
                 <h4 class="bonus-map-title bonus-text-sub-title bonus-text-sub-title-bold">Verifica la ubicación<h4/>
